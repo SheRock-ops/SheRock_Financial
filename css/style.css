@@ -1287,3 +1287,269 @@ h1, h2, h3 {
     background-color: #142D4E;
     border-color: #142D4E;
 }
+
+/* ========================================
+   Investment Products Hero
+======================================== */
+
+.products-hero {
+    background: linear-gradient(115deg, #0B1D33, #142D4E, #24476A);
+    padding: 100px 8%;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.products-hero .section-label {
+    color: #D7B879;
+}
+
+.products-hero h2 {
+    font-family: "Playfair Display", serif;
+    font-size: clamp(36px, 4vw, 54px);
+    color: #FFFFFF;
+    margin: 25px 0;
+}
+
+.products-hero > p:last-child {
+    max-width: 750px;
+    margin: 0 auto;
+    line-height: 1.8;
+    color: #E1EAF3;
+}
+
+/* ========================================
+   Investment Products Section
+======================================== */
+
+.products-section {
+    background: #F5F8FC;
+    padding: 85px 8%;
+}
+
+.products-container {
+    max-width: 1250px;
+    margin: 0 auto;
+}
+
+.products-container > .section-label,
+.products-container > h2,
+.products-intro {
+    text-align: center;
+}
+
+.products-container > h2,
+.products-comparison h2 {
+    font-family: "Playfair Display", serif;
+    font-size: clamp(32px, 4vw, 46px);
+    color: #142D4E;
+    margin: 20px 0;
+}
+
+.products-intro {
+    max-width: 750px;
+    margin: 0 auto 45px;
+    color: #52657C;
+    line-height: 1.8;
+}
+
+/* ========================================
+   Product Filters
+======================================== */
+
+.products-filters {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 35px;
+}
+
+.products-filters label {
+    color: #142D4E;
+    font-weight: 700;
+}
+
+.products-filters select {
+    padding: 14px 18px;
+    border: 1px solid #CED8E5;
+    border-radius: 8px;
+    background: #FFFFFF;
+    color: #142D4E;
+    font-family: "DM Sans", sans-serif;
+}
+
+/* ========================================
+   Investment Product Cards
+======================================== */
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 25px;
+}
+
+.product-card {
+    background: #FFFFFF;
+    border-top: 4px solid #D7B879;
+    border-radius: 12px;
+    padding: 32px;
+    box-shadow: 0 15px 35px rgba(20, 45, 78, 0.08);
+}
+
+.product-card[hidden],
+.products-empty[hidden] {
+    display: none;
+}
+
+.product-card h3 {
+    font-family: "Playfair Display", serif;
+    font-size: 25px;
+    color: #142D4E;
+    margin: 20px 0;
+}
+
+.product-rate {
+    padding: 20px;
+    background: #F5F8FC;
+    border-radius: 10px;
+    margin-bottom: 22px;
+}
+
+.product-rate strong {
+    display: block;
+    font-family: "Playfair Display", serif;
+    font-size: 38px;
+    color: #142D4E;
+}
+
+.product-rate span {
+    font-size: 13px;
+    color: #52657C;
+}
+
+.product-description {
+    color: #52657C;
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+
+.product-details p {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    padding: 14px 0;
+    border-bottom: 1px solid #E6ECF3;
+}
+
+.product-details span {
+    color: #52657C;
+}
+
+.product-details strong {
+    color: #142D4E;
+    text-align: right;
+}
+
+.product-compare {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 25px;
+    font-weight: 700;
+    color: #142D4E;
+    cursor: pointer;
+}
+
+.product-compare input {
+    width: 18px;
+    height: 18px;
+    accent-color: #142D4E;
+}
+
+.products-empty {
+    padding: 35px;
+    background: #FFFFFF;
+    border-radius: 10px;
+    text-align: center;
+    color: #52657C;
+}
+
+/* ========================================
+   Product Comparison Table
+======================================== */
+
+.products-comparison {
+    margin-top: 75px;
+    padding: 35px;
+    background: #FFFFFF;
+    border-top: 4px solid #D7B879;
+    border-radius: 12px;
+}
+
+.products-comparison > p {
+    margin-bottom: 25px;
+    color: #52657C;
+}
+
+.products-table-wrapper {
+    overflow-x: auto;
+}
+
+.products-comparison table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 600px;
+}
+
+.products-comparison th,
+.products-comparison td {
+    padding: 17px;
+    text-align: left;
+    border-bottom: 1px solid #E6ECF3;
+}
+
+.products-comparison th {
+    background: #142D4E;
+    color: #FFFFFF;
+}
+
+/* ========================================
+   Responsive Investment Products
+======================================== */
+
+@media screen and (max-width: 1000px) {
+
+    .products-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+}
+
+@media screen and (max-width: 650px) {
+
+    .products-hero {
+        padding: 75px 6%;
+    }
+
+    .products-section {
+        padding: 65px 6%;
+    }
+
+    .products-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .products-filters {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .product-card {
+        padding: 25px;
+    }
+
+    .products-comparison {
+        padding: 20px;
+    }
+
+}
