@@ -1553,3 +1553,277 @@ h1, h2, h3 {
     }
 
 }
+
+/* ========================================
+   Investment Calculator Hero
+======================================== */
+
+.calculator-hero {
+    background: linear-gradient(115deg, #0B1D33, #142D4E, #24476A);
+    padding: 100px 8%;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.calculator-hero .section-label {
+    color: #D7B879;
+}
+
+.calculator-hero h2 {
+    font-family: "Playfair Display", serif;
+    font-size: clamp(36px, 4vw, 54px);
+    color: #FFFFFF;
+    margin: 25px 0;
+}
+
+.calculator-hero > p:last-child {
+    max-width: 750px;
+    margin: 0 auto;
+    line-height: 1.8;
+    color: #E1EAF3;
+}
+
+/* ========================================
+   Investment Calculator Section
+======================================== */
+
+.calculator-section {
+    background: #F5F8FC;
+    padding: 85px 8%;
+}
+
+.calculator-container {
+    max-width: 1250px;
+    margin: 0 auto;
+}
+
+.calculator-container > .section-label,
+.calculator-container > h2,
+.calculator-intro {
+    text-align: center;
+}
+
+.calculator-container > h2 {
+    font-family: "Playfair Display", serif;
+    font-size: clamp(32px, 4vw, 46px);
+    color: #142D4E;
+    margin: 20px 0;
+}
+
+.calculator-intro {
+    max-width: 750px;
+    margin: 0 auto 45px;
+    color: #52657C;
+    line-height: 1.8;
+}
+
+/* ========================================
+   Calculator Layout
+======================================== */
+
+.calculator-layout {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 30px;
+    align-items: start;
+}
+
+.calculator-card,
+.calculator-results {
+    min-width: 0;
+    background: #FFFFFF;
+    border-top: 4px solid #D7B879;
+    border-radius: 12px;
+    padding: 35px;
+    box-shadow: 0 15px 35px rgba(20, 45, 78, 0.08);
+}
+
+.calculator-card h3,
+.calculator-results h3 {
+    font-family: "Playfair Display", serif;
+    font-size: 28px;
+    color: #142D4E;
+    margin-bottom: 30px;
+}
+
+/* ========================================
+   Calculator Form
+======================================== */
+
+.calculator-field {
+    margin-bottom: 22px;
+}
+
+.calculator-field label {
+    display: block;
+    font-size: 14px;
+    font-weight: 700;
+    color: #142D4E;
+    margin-bottom: 10px;
+}
+
+.calculator-field input,
+.calculator-field select {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #CED8E5;
+    border-radius: 8px;
+    background: #FFFFFF;
+    color: #142D4E;
+    font-family: "DM Sans", sans-serif;
+    font-size: 16px;
+}
+
+.calculator-field input:focus-visible,
+.calculator-field select:focus-visible {
+    outline: 2px solid #D7B879;
+    outline-offset: 2px;
+}
+
+.calculator-submit {
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+/* ========================================
+   Calculator Results
+======================================== */
+
+.calculator-results .section-label {
+    margin-bottom: 15px;
+}
+
+.calculator-result-main {
+    padding: 28px;
+    margin-bottom: 25px;
+    background: #F5F8FC;
+    border-radius: 10px;
+}
+
+.calculator-result-main span {
+    display: block;
+    color: #52657C;
+    font-size: 14px;
+    margin-bottom: 12px;
+}
+
+.calculator-result-main strong {
+    display: block;
+    font-family: "Playfair Display", serif;
+    font-size: clamp(32px, 4vw, 44px);
+    color: #142D4E;
+    overflow-wrap: anywhere;
+}
+
+.calculator-result-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    padding: 17px 0;
+    border-bottom: 1px solid #E6ECF3;
+}
+
+.calculator-result-row span {
+    color: #52657C;
+}
+
+.calculator-result-row strong {
+    color: #142D4E;
+    text-align: right;
+}
+
+.calculator-note {
+    margin-top: 30px;
+    padding: 18px;
+    background: #F5F8FC;
+    border-left: 3px solid #D7B879;
+    border-radius: 5px;
+    color: #52657C;
+    font-size: 13px;
+    line-height: 1.8;
+}
+
+/* ========================================
+   Responsive Investment Calculator
+======================================== */
+
+@media screen and (max-width: 900px) {
+
+    .calculator-layout {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+@media screen and (max-width: 650px) {
+
+    .calculator-hero {
+        padding: 75px 6%;
+    }
+
+    .calculator-section {
+        padding: 65px 6%;
+    }
+
+    .calculator-card,
+    .calculator-results {
+        padding: 25px;
+    }
+
+    .calculator-result-row {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .calculator-result-row strong {
+        text-align: left;
+    }
+
+}
+/* ========================================
+   Calculation History
+======================================== */
+
+.calculator-history {
+    margin-top: 75px;
+    padding: 35px;
+    background: #FFFFFF;
+    border-top: 4px solid #D7B879;
+    border-radius: 12px;
+    box-shadow: 0 15px 35px rgba(20, 45, 78, 0.08);
+}
+/* ========================================
+   Calculation History Table Fix
+======================================== */
+
+.calculator-history-wrapper {
+    width: 100%;
+    overflow-x: auto;
+    margin-top: 25px;
+}
+
+.calculator-history table {
+    width: 100%;
+    min-width: 1000px;
+    border-collapse: collapse;
+}
+
+.calculator-history th,
+.calculator-history td {
+    padding: 18px 20px;
+    text-align: left;
+    border-bottom: 1px solid #E6ECF3;
+    white-space: nowrap;
+}
+
+.calculator-history th {
+    background: #142D4E;
+    color: #FFFFFF;
+    font-weight: 700;
+}
+
+.calculator-history tbody tr:hover {
+    background: #F5F8FC;
+}
