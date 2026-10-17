@@ -2380,3 +2380,127 @@ h1, h2, h3 {
     }
 
 }
+.education-quiz-option input {
+    accent-color: #142D4E;
+    flex-shrink: 0;
+}
+
+.education-option-correct,
+.education-quiz-option.education-option-correct:has(input:checked) {
+    border-color: #80BA94;
+    background: #E9F5ED;
+}
+
+.education-option-incorrect,
+.education-quiz-option.education-option-incorrect:has(input:checked) {
+    border-color: #DB9999;
+    background: #FCEEEE;
+}
+
+.education-answer-feedback {
+    margin-top: 20px;
+    padding: 17px;
+    background: #F5F8FC;
+    border-left: 3px solid #D7B879;
+    border-radius: 6px;
+    line-height: 1.65;
+}
+
+.education-answer-feedback p {
+    margin-bottom: 0;
+}
+
+.education-quiz-error {
+    color: #B22222;
+    min-height: 1.4em;
+}
+
+.education-quiz-actions {
+    margin-top: 12px;
+}
+
+.education-quiz-results {
+    text-align: center;
+}
+
+.education-final-score {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.education-quiz-results p {
+    color: #536983;
+    line-height: 1.7;
+}
+
+.education-disclaimer {
+    margin-top: 75px;
+    padding: 20px 24px;
+    background: #EAF0F7;
+    border-left: 3px solid #D7B879;
+    border-radius: 8px;
+    color: #536983;
+    line-height: 1.75;
+}
+
+.education-footer {
+    background: #0B1D33;
+    color: #FFFFFF;
+    text-align: center;
+    border-top: 3px solid #D7B879;
+    padding: 32px 20px;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.education-footer p {
+    margin: 6px 0;
+}
+
+.education-footer small {
+    display: block;
+    color: #D7B879;
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 960px) {
+    .education-lessons-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .education-container {
+        width: min(100% - 28px, 1200px);
+    }
+
+    .education-hero {
+        padding: 68px 14px;
+    }
+
+    .education-intro {
+        padding-top: 60px;
+    }
+
+    .education-lessons-grid,
+    .education-habits-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .education-lesson-card {
+        padding: 24px;
+    }
+
+    .education-habits,
+    .education-quiz-panel {
+        padding: 25px 20px;
+    }
+
+    .education-quiz-meta {
+        font-size: 0.8rem;
+    }
+
+    .education-button {
+        width: 100%;
+        text-align: center;
+    }
+}
