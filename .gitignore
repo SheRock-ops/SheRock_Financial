@@ -1,0 +1,19 @@
+
+# Local database configuration
+includes/db.php
+
+# Environment files
+.env
+.env.*
+
+# Local system files
+.DS_Store
+
+# Editor settings
+.vscode/
+
+# Logs
+*.log
+
+# Separate tasks repository
+sherock-financial-tasks/
