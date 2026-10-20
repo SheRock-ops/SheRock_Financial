@@ -2718,3 +2718,67 @@ h1, h2, h3 {
     background-color: #24476e;
     color: #ffffff;
 }
+/* ============================================
+   SHEROCK FINANCIAL HEADER LOGO
+============================================ */
+
+.dashboard-logo {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    background: transparent;
+    text-decoration: none;
+}
+
+.dashboard-logo .sherock-logo-img {
+    display: block;
+    width: 130px;
+    height: 90px;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+/* ============================================
+   RESPONSIVE LOGO
+============================================ */
+
+@media screen and (max-width: 800px) {
+
+    .dashboard-logo .sherock-logo-img {
+        width: 90px;
+        height: 75px;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+
+    .dashboard-logo .sherock-logo-img {
+        width: 75px;
+        height: 65px;
+    }
+
+}
+
+/* ============================================
+   RESPONSIVE LOGO
+============================================ */
+
+@media screen and (max-width: 800px) {
+
+    .dashboard-logo .sherock-logo-img {
+        height: 50px;
+        max-width: 180px;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+
+    .dashboard-logo .sherock-logo-img {
+        height: 42px;
+        max-width: 150px;
+    }
+
+}
