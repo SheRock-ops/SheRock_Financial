@@ -396,9 +396,14 @@ $overall_progress = $total_target > 0
 
     <!-- Header -->
     <header>
-        <div class="logo">
-            <h1>SheRock <span>Financial</span></h1>
-        </div>
+        <!-- SheRock Financial Logo -->
+        <a href="dashboard.php" class="logo dashboard-logo" aria-label="SheRock Financial Dashboard">
+          <img
+            src="images/FinalLogo.png"
+            alt="SheRock Financial"
+            class="sherock-logo-img"
+          >   
+          </a>
 
         <nav aria-label="Main navigation">
             <a href="index.php">Home</a>
