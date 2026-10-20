@@ -40,6 +40,11 @@ $first_name = htmlspecialchars(
         <nav aria-label="Main navigation">
             <a href="index.php">Home</a>
             <a href="dashboard.php" aria-current="page">Dashboard</a>
+            <a href="savings_goals.php">Savings Goals</a>
+            <a href="products.php">Products</a>
+            <a href="calculator.php">Calculator</a>
+            <a href="investments.php">My Investments</a>
+            <a href="education.php">Education</a>
             <a href="logout.php">Logout</a>
         </nav>
     </header>
@@ -62,35 +67,125 @@ $first_name = htmlspecialchars(
         </section>
 
         <!-- Dashboard Features -->
-        <section class="services">
+        <section class="services dashboard-services">
 
             <p class="section-label">YOUR FINANCIAL TOOLS</p>
+
             <h2>Build Your Financial Future</h2>
 
-            <div class="service-container">
+            <p class="dashboard-intro">
+                Everything you need to save smarter, explore investments,
+                and build financial confidence in one place.
+            </p>
 
-                <article class="service-card">
+            <div class="service-container dashboard-tools">
+
+                <!-- Savings Goals -->
+                <article class="service-card dashboard-tool-card">
+
                     <div class="service-icon">01</div>
+
                     <h3>Savings Goals</h3>
+
                     <p>
-                        Create and manage your personal savings goals.
+                        Create savings goals, record contributions,
+                        and monitor your progress.
                     </p>
+
+                    <a href="savings_goals.php" class="dashboard-tool-link">
+                        Manage Savings Goals &rarr;
+                    </a>
+
                 </article>
 
-                <article class="service-card">
+                <!-- Investment Products -->
+                <article class="service-card dashboard-tool-card">
+
                     <div class="service-icon">02</div>
-                    <h3>My Investments</h3>
+
+                    <h3>Investment Products</h3>
+
                     <p>
-                        Track your investments and monitor maturity dates.
+                        Explore investment products, compare interest rates,
+                        and discover different savings options.
                     </p>
+
+                    <a href="products.php" class="dashboard-tool-link">
+                        Explore Products &rarr;
+                    </a>
+
                 </article>
 
-                <article class="service-card">
+                <!-- Investment Calculator -->
+                <article class="service-card dashboard-tool-card">
+
                     <div class="service-icon">03</div>
+
                     <h3>Investment Calculator</h3>
+
                     <p>
-                        Estimate future growth and plan with confidence.
+                        Estimate potential investment growth
+                        and plan for future financial milestones.
                     </p>
+
+                    <a href="calculator.php" class="dashboard-tool-link">
+                        Calculate Returns &rarr;
+                    </a>
+
+                </article>
+
+                <!-- My Investments -->
+                <article class="service-card dashboard-tool-card">
+
+                    <div class="service-icon">04</div>
+
+                    <h3>My Investments</h3>
+
+                    <p>
+                        Record investments, review estimated maturity values,
+                        and track investment status.
+                    </p>
+
+                    <a href="investments.php" class="dashboard-tool-link">
+                        Track Investments &rarr;
+                    </a>
+
+                </article>
+
+                <!-- Financial Education -->
+                <article class="service-card dashboard-tool-card">
+
+                    <div class="service-icon">05</div>
+
+                    <h3>Financial Education Hub</h3>
+
+                    <p>
+                        Learn about budgeting, saving, investing,
+                        and financial security through interactive lessons.
+                    </p>
+
+                    <a href="education.php" class="dashboard-tool-link">
+                        Start Learning &rarr;
+                    </a>
+
+                </article>
+
+                <!-- Financial Literacy Quiz -->
+                <article class="service-card dashboard-tool-card">
+
+                    <div class="service-icon">06</div>
+
+                    <h3>Financial Literacy Quiz</h3>
+
+                    <p>
+                        Test your financial knowledge with six questions,
+                        instant feedback, and your final quiz score.
+                    </p>
+
+                    <a href="education.php#financial-quiz" class="dashboard-tool-link">
+                        Take the Quiz &rarr;
+                    </a>
+
                 </article>
 
             </div>
@@ -101,8 +196,9 @@ $first_name = htmlspecialchars(
 
     <!-- Footer -->
     <footer>
-        <p>&copy; 2026 SheRock Financial. All rights reserved.</p>
+        <p>&copy; <?php echo date("Y"); ?> SheRock Financial. All rights reserved.</p>
         <p>Save Smarter. Grow Stronger.</p>
+        <p>For educational and financial planning purposes only.</p>
     </footer>
 
 </body>

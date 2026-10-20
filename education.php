@@ -23,6 +23,7 @@ if (!isset($_SESSION['user_id'])) {
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="css/style.css">
 
     <style>
@@ -200,6 +201,14 @@ if (!isset($_SESSION['user_id'])) {
             padding: 20px 0 90px;
         }
 
+        #financial-quiz {
+            scroll-margin-top: 30px;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
         .education-quiz-card {
             max-width: 850px;
             margin: 0 auto;
@@ -337,6 +346,10 @@ if (!isset($_SESSION['user_id'])) {
             display: none;
         }
 
+        .education-quiz-results {
+            text-align: center;
+        }
+
         .education-disclaimer {
             background: #eaf0f7;
             border-left: 4px solid #d7b879;
@@ -403,6 +416,17 @@ if (!isset($_SESSION['user_id'])) {
                 flex-direction: column;
             }
         }
+
+        @media (prefers-reduced-motion: reduce) {
+            html {
+                scroll-behavior: auto;
+            }
+
+            .education-progress-fill,
+            .education-lesson-toggle {
+                transition: none;
+            }
+        }
     </style>
 </head>
 
@@ -440,6 +464,7 @@ if (!isset($_SESSION['user_id'])) {
 
             <div class="education-lessons">
 
+                <!-- LESSON 01 -->
                 <details class="education-lesson">
                     <summary>
                         <div>
@@ -471,6 +496,7 @@ if (!isset($_SESSION['user_id'])) {
                     </div>
                 </details>
 
+                <!-- LESSON 02 -->
                 <details class="education-lesson">
                     <summary>
                         <div>
@@ -501,6 +527,7 @@ if (!isset($_SESSION['user_id'])) {
                     </div>
                 </details>
 
+                <!-- LESSON 03 -->
                 <details class="education-lesson">
                     <summary>
                         <div>
@@ -533,6 +560,7 @@ if (!isset($_SESSION['user_id'])) {
                     </div>
                 </details>
 
+                <!-- LESSON 04 -->
                 <details class="education-lesson">
                     <summary>
                         <div>
@@ -564,6 +592,7 @@ if (!isset($_SESSION['user_id'])) {
                     </div>
                 </details>
 
+                <!-- LESSON 05 -->
                 <details class="education-lesson">
                     <summary>
                         <div>
@@ -596,6 +625,7 @@ if (!isset($_SESSION['user_id'])) {
                     </div>
                 </details>
 
+                <!-- LESSON 06 -->
                 <details class="education-lesson">
                     <summary>
                         <div>
@@ -634,7 +664,11 @@ if (!isset($_SESSION['user_id'])) {
              INTERACTIVE FINANCIAL QUIZ
         ============================================ -->
 
-        <section class="education-quiz-section" aria-labelledby="quiz-title">
+        <section
+            id="financial-quiz"
+            class="education-quiz-section"
+            aria-labelledby="quiz-title"
+        >
 
             <div class="education-container">
 
