@@ -1,4 +1,3 @@
-
 <?php
 
 session_start();
@@ -383,35 +382,17 @@ $overall_progress = $total_target > 0
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Manage your savings goals with SheRock Financial.">
-
     <title>Savings Goals | SheRock Financial</title>
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
-
     <link rel="stylesheet" href="css/style.css?v=2">
 </head>
 <body>
 
-    <!-- Header -->
-    <header>
-        <!-- SheRock Financial Logo -->
-        <a href="dashboard.php" class="logo dashboard-logo" aria-label="SheRock Financial Dashboard">
-          <img
-            src="images/FinalLogo.png"
-            alt="SheRock Financial"
-            class="sherock-logo-img"
-          >   
-          </a>
-
-        <nav aria-label="Main navigation">
-            <a href="index.php">Home</a>
-            <a href="dashboard.php">Dashboard</a>
-            <a href="savings_goals.php" aria-current="page">Savings Goals</a>
-            <a href="logout.php" class="btn">Logout</a>
-        </nav>
-    </header>
+        <!-- Shared Header -->
+            <?php include __DIR__ . '/includes/header.php'; ?>
+        
 
     <!-- Main Content -->
     <main>

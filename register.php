@@ -187,31 +187,16 @@ if (empty($_SESSION["csrf_token"])) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Create your SheRock Financial account and start your journey toward financial confidence.">
-
     <title>Register | SheRock Financial</title>
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
-
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-    <!-- Header -->
-    <header>
-        <div class="logo">
-            <h1>SheRock <span>Financial</span></h1>
-        </div>
-
-        <nav aria-label="Main navigation">
-            <a href="index.php">Home</a>
-            <a href="about.php">About</a>
-            <a href="products.php">Products</a>
-            <a href="calculator.php">Calculator</a>
-            <a href="login.php">Login</a>
-        </nav>
-    </header>
+    <!-- Shared Header -->
+            <?php include __DIR__ . '/includes/header.php'; ?>
 
     <!-- Main Content -->
     <main class="auth-main">

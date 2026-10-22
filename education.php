@@ -19,13 +19,10 @@ if (!isset($_SESSION['user_id'])) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Learn financial basics with SheRock Financial's interactive lessons and quiz.">
     <title>Financial Education Hub | SheRock Financial</title>
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
-
     <link rel="stylesheet" href="css/style.css">
-
     <style>
         /* ============================================
            FINANCIAL EDUCATION HUB

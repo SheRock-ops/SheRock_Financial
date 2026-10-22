@@ -1,4 +1,3 @@
-
 <?php
 
 session_start();
@@ -479,39 +478,19 @@ foreach ($investments as $investment) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Investment Tracking | SheRock Financial</title>
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
-
     <link rel="stylesheet" href="css/style.css?v=5">
 </head>
 
 <body>
 
-    <!-- Header -->
-    <header>
+    <!-- Shared Header -->
+    <?php include __DIR__ . '/includes/header.php'; ?>
 
-        <div class="logo">
-            <h1>SheRock <span>Financial</span></h1>
-        </div>
-
-        <nav aria-label="Main navigation">
-
-            <a href="index.php">Home</a>
-            <a href="dashboard.php">Dashboard</a>
-            <a href="savings_goals.php">Savings Goals</a>
-            <a href="products.php">Products</a>
-            <a href="calculator.php">Calculator</a>
-            <a href="investments.php" aria-current="page">Investments</a>
-            <a href="logout.php" class="btn">Logout</a>
-
-        </nav>
-
-    </header>
-
+    <!-- Main Content -->
     <main>
 
         <!-- Investment Tracking Hero -->
@@ -1041,3 +1020,5 @@ foreach ($investments as $investment) {
 
 </body>
 </html>
+
+                                            

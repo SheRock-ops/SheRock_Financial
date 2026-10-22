@@ -12,28 +12,11 @@
 </head>
 <body>
 
-    <!-- Header -->
-    <header>
-        <!-- SheRock Financial Logo -->
-        <a href="dashboard.php" class="logo dashboard-logo" aria-label="SheRock Financial Dashboard">
-          <img
-            src="images/FinalLogo.png"
-            alt="SheRock Financial"
-            class="sherock-logo-img"
-          >   
-          </a>
+        <!-- Shared Header -->
+            <?php include __DIR__ . '/includes/header.php'; ?>
 
-        <nav aria-label="Main navigation">
-            <a href="index.php" aria-current="page">Home</a>
-            <a href="about.html">About</a>
-            <a href="products.php">Products</a>
-            <a href="calculator.php">Calculator</a>
-            <a href="login.php">Login</a>
-        </nav>
-    </header>
-
-    <!-- Main Content -->
-    <main>
+        <!-- Main Content -->
+        <main>
 
         <!-- Hero Section -->
         <section class="hero">

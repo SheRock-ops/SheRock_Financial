@@ -1,4 +1,3 @@
-
 <?php
 
 session_start();
@@ -29,28 +28,8 @@ $first_name = htmlspecialchars(
 </head>
 <body>
 
-    <!-- Header -->
-    <header>
-        <!-- SheRock Financial Logo -->
-        <a href="dashboard.php" class="logo dashboard-logo" aria-label="SheRock Financial Dashboard">
-          <img
-            src="images/FinalLogo.png"
-            alt="SheRock Financial"
-            class="sherock-logo-img"
-          >   
-          </a>
-
-        <nav aria-label="Main navigation">
-            <a href="index.php">Home</a>
-            <a href="dashboard.php" aria-current="page">Dashboard</a>
-            <a href="savings_goals.php">Savings Goals</a>
-            <a href="products.php">Products</a>
-            <a href="calculator.php">Calculator</a>
-            <a href="investments.php">My Investments</a>
-            <a href="education.php">Education</a>
-            <a href="logout.php">Logout</a>
-        </nav>
-    </header>
+    <!-- Shared Header -->
+    <?php include __DIR__ . '/includes/header.php'; ?>
 
     <!-- Main Content -->
     <main>

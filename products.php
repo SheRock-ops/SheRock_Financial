@@ -1,4 +1,3 @@
-
 <?php
 
 session_start();
@@ -77,46 +76,16 @@ sort($categories);
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Explore and compare GICs and investment products with SheRock Financial.">
-
     <title>Investment Products | SheRock Financial</title>
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
-
     <link rel="stylesheet" href="css/style.css?v=2">
 </head>
 <body>
 
-    <!-- Header -->
-    <header>
-
-        <div class="logo">
-            <h1>SheRock <span>Financial</span></h1>
-        </div>
-
-        <nav aria-label="Main navigation">
-
-            <a href="index.php">Home</a>
-
-            <?php if (isset($_SESSION["user_id"])): ?>
-
-                <a href="dashboard.php">Dashboard</a>
-                <a href="savings_goals.php">Savings Goals</a>
-                <a href="products.php" aria-current="page">Products</a>
-                <a href="logout.php" class="btn">Logout</a>
-
-            <?php else: ?>
-
-                <a href="about.php">About</a>
-                <a href="products.php" aria-current="page">Products</a>
-                <a href="login.php" class="btn">Login</a>
-
-            <?php endif; ?>
-
-        </nav>
-
-    </header>
+    <!-- Shared Header -->
+    <?php include __DIR__ . '/includes/header.php'; ?>
 
     <!-- Main Content -->
     <main>
