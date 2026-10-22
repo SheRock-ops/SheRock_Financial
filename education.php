@@ -1,4 +1,3 @@
-
 <?php
 // ============================================
 // SHEROCK FINANCIAL - FINANCIAL EDUCATION HUB
@@ -428,6 +427,9 @@ if (!isset($_SESSION['user_id'])) {
 </head>
 
 <body class="education-page">
+
+    <!-- Shared Header -->
+    <?php include __DIR__ . '/includes/header.php'; ?>
 
     <!-- ============================================
          EDUCATION HERO
