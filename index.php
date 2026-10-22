@@ -25,7 +25,7 @@
 
         <nav aria-label="Main navigation">
             <a href="index.php" aria-current="page">Home</a>
-            <a href="about.php">About</a>
+            <a href="about.html">About</a>
             <a href="products.php">Products</a>
             <a href="calculator.php">Calculator</a>
             <a href="login.php">Login</a>
@@ -34,8 +34,6 @@
 
     <!-- Main Content -->
     <main>
-
-        
 
         <!-- Hero Section -->
         <section class="hero">

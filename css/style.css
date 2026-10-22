@@ -2782,3 +2782,96 @@ h1, h2, h3 {
     }
 
 }
+
+/* ============================================
+   SHEROCK FINANCIAL - ABOUT PAGE
+============================================ */
+
+.about-hero {
+    background: linear-gradient(120deg, #0b1d33, #24476e);
+    color: #ffffff;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.about-hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    color: #ffffff;
+    margin: 20px 0;
+}
+
+.about-hero > p:last-child {
+    max-width: 750px;
+    margin: 0 auto;
+    line-height: 1.8;
+}
+
+.about-content,
+.about-mission,
+.about-cta {
+    padding: 85px 8%;
+    text-align: center;
+}
+
+.about-content {
+    background: #f5f8fc;
+}
+
+.about-content h2,
+.about-mission h2,
+.about-cta h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(2rem, 4vw, 3rem);
+    margin: 20px 0 30px;
+}
+
+.about-content p,
+.about-mission p,
+.about-cta p {
+    max-width: 800px;
+    margin: 15px auto;
+    line-height: 1.9;
+}
+
+.about-mission {
+    background: #ffffff;
+}
+
+.about-cta {
+    background: #142d4e;
+    color: #ffffff;
+}
+
+.about-cta h2 {
+    color: #ffffff;
+}
+
+.about-cta-button {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 16px 35px;
+    background: #d7b879;
+    color: #0b1d33;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.about-cta-button:hover {
+    background: #c5a461;
+}
+
+@media screen and (max-width: 800px) {
+
+    .about-hero {
+        padding: 70px 20px;
+    }
+
+    .about-content,
+    .about-mission,
+    .about-cta {
+        padding: 60px 20px;
+    }
+
+}
