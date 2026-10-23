@@ -17,3 +17,13 @@ includes/db.php
 
 # Separate tasks repository
 sherock-financial-tasks/
+# Database connection and local testing
+includes/db.php
+includes/test_connection.php
+
+# Environment files
+.env
+.env.*
+
+# macOS files
+.DS_Store
