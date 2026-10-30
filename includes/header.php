@@ -16,7 +16,7 @@
 
     <!-- Logo -->
     <a href="index.php" class="site-logo" aria-label="SheRock Financial Home">
-        <img src="images/FinalLogo.png" alt="SheRock Financial Logo">
+        <img src="images/logo1.png" alt="SheRock Financial Logo">
     </a>
 
     <!-- Navigation -->

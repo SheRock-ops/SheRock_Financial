@@ -356,14 +356,21 @@ if (!isset($_SESSION['user_id'])) {
             margin-top: 50px;
         }
 
+        
         .education-footer {
-            background: #0b1d33;
+            background: linear-gradient(
+                115deg,
+                #092B78 0%,
+                #1646B8 60%,
+                #2459D6 100%
+            );
             color: #ffffff;
-            border-top: 3px solid #d7b879;
+            border-top: 3px solid #D4AF37;
             text-align: center;
             padding: 35px 20px;
             line-height: 1.8;
-        }
+}
+
 
         .education-footer p {
             margin: 6px 0;

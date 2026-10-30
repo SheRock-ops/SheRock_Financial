@@ -27,3 +27,5 @@ includes/test_connection.php
 
 # macOS files
 .DS_Store
+# Local database diagnostic file
+/includes/test_connection.php
