@@ -714,13 +714,19 @@ foreach ($investments as $investment) {
                                     );
 
                                     $recordStatus = $investment["status"];
+                                    // Display the recorded status first.
+                                    // Only active investments use their calculated maturity status.
+
+                                    $displayStatus = $recordStatus === "Active"
+                                        ? $maturityStatus
+                                        : $recordStatus;
 
                                     $estimatedTotal = null;
                                     $estimatedInterest = null;
                                     $progress = null;
                                     $remainingDays = null;
 
-                                    if (!empty($maturityDate)) {
+                                    if ($recordStatus === "Active" && !empty($maturityDate)) {
 
                                         $start = new DateTimeImmutable(
                                             $investment["start_date"]
@@ -773,16 +779,15 @@ foreach ($investments as $investment) {
                                         </span>
 
                                         <span class="investment-status
-                                            <?php
-                                                echo investment_escape(
-                                                    strtolower(
-                                                        str_replace(" ", "-", $maturityStatus)
-                                                    )
-                                                );
-                                            ?>">
-                                            <?php echo investment_escape($maturityStatus); ?>
-                                        </span>
-
+                                        <?php
+                                            echo investment_escape(
+                                                strtolower(
+                                                    str_replace(" ", "-", $displayStatus)
+                                                )
+                                            );
+                                        ?>">
+                                        <?php echo investment_escape($displayStatus); ?>
+                                    </span>
                                     </div>
 
                                     <h3>
@@ -833,7 +838,41 @@ foreach ($investments as $investment) {
 
                                     </div>
 
-                                    <?php if ($progress !== null): ?>
+                                    <?php if ($recordStatus === "Cancelled"): ?>
+
+                                        <!-- Cancelled Investment -->
+                                        <div class="investment-estimate">
+
+                                            <span>Investment Cancelled</span>
+
+                                            <strong>Tracking Stopped</strong>
+
+                                            <small>
+                                                This investment has been cancelled.
+                                                Maturity progress and estimated returns
+                                                are no longer displayed.
+                                            </small>
+
+                                        </div>
+
+                                    <?php elseif ($recordStatus === "Completed"): ?>
+
+                                        <!-- Completed Investment -->
+                                        <div class="investment-estimate">
+
+                                            <span>Investment Completed</span>
+
+                                            <strong>Tracking Complete</strong>
+
+                                            <small>
+                                                This investment has been marked as completed.
+                                                Active maturity tracking and projected returns
+                                                are no longer displayed.
+                                            </small>
+
+                                        </div>
+
+                                    <?php elseif ($recordStatus === "Active" && $progress !== null): ?>
 
                                         <!-- Maturity Progress -->
                                         <div class="investment-progress">
@@ -893,6 +932,7 @@ foreach ($investments as $investment) {
 
                                     <?php else: ?>
 
+                                        <!-- Active Flexible Investment -->
                                         <div class="investment-estimate">
 
                                             <span>Flexible Investment</span>

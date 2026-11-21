@@ -1,4 +1,5 @@
 
+
 <?php
     // Identify the current page
     $currentPage = basename($_SERVER['SCRIPT_NAME']);
@@ -19,8 +20,21 @@
         <img src="images/logo1.png" alt="SheRock Financial Logo">
     </a>
 
+    <!-- Mobile Menu Button -->
+    <button
+        type="button"
+        class="menu-toggle"
+        aria-label="Open navigation menu"
+        aria-controls="main-navigation"
+        aria-expanded="false"
+    >
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
     <!-- Navigation -->
-    <nav class="site-nav" aria-label="Main Navigation">
+    <nav class="site-nav" id="main-navigation" aria-label="Main Navigation">
 
         <a href="index.php" <?php if ($currentPage === 'index.php') echo 'aria-current="page"'; ?>>Home</a>
         <a href="about.html">About</a>
@@ -44,3 +58,41 @@
     </nav>
 
 </header>
+
+<!-- Mobile Navigation Script -->
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+
+        const menuToggle = document.querySelector('.menu-toggle');
+        const siteNav = document.querySelector('#main-navigation');
+
+        if (!menuToggle || !siteNav) {
+            return;
+        }
+
+        menuToggle.addEventListener('click', function () {
+
+            const isOpen = siteNav.classList.toggle('nav-open');
+
+            menuToggle.setAttribute('aria-expanded', String(isOpen));
+            menuToggle.setAttribute(
+                'aria-label',
+                isOpen ? 'Close navigation menu' : 'Open navigation menu'
+            );
+
+        });
+
+        siteNav.querySelectorAll('a').forEach(function (link) {
+
+            link.addEventListener('click', function () {
+
+                siteNav.classList.remove('nav-open');
+                menuToggle.setAttribute('aria-expanded', 'false');
+                menuToggle.setAttribute('aria-label', 'Open navigation menu');
+
+            });
+
+        });
+
+    });
+</script>

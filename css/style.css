@@ -3038,3 +3038,324 @@ footer a {
 footer a:hover {
     color: #FFFFFF;
 }
+
+/* =========================================
+   SHEROCK FINANCIAL - MOBILE NAVIGATION
+========================================= */
+
+/* Desktop: Hide Hamburger Menu */
+
+.menu-toggle {
+    display: none;
+}
+
+
+/* =========================================
+   MOBILE RESPONSIVE NAVIGATION
+========================================= */
+
+@media screen and (max-width: 768px) {
+
+    .site-header {
+        position: relative;
+        display: grid;
+        grid-template-columns: 1fr auto;
+        align-items: center;
+        justify-content: space-between;
+        gap: 15px;
+        width: 100%;
+        padding: 15px 20px;
+    }
+
+    /* Logo */
+
+    .site-logo {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        width: fit-content;
+        margin: 0;
+    }
+
+    .site-logo img {
+        display: block;
+        width: auto;
+        height: 55px;
+        max-width: 100%;
+        object-fit: contain;
+    }
+
+    /* Hamburger Button */
+
+    .menu-toggle {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        justify-self: end;
+        gap: 5px;
+        width: 45px;
+        height: 45px;
+        margin: 0;
+        padding: 10px;
+        background: #d9b132;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+    }
+
+    .menu-toggle span {
+        display: block;
+        width: 24px;
+        height: 3px;
+        background: #123b92;
+        border-radius: 3px;
+    }
+
+    .menu-toggle:focus-visible {
+        outline: 3px solid #ffffff;
+        outline-offset: 3px;
+    }
+
+    /* Mobile Navigation */
+
+    .site-nav {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        z-index: 1000;
+        width: 100%;
+        padding: 20px;
+        background: #1947b8;
+        box-shadow: 0 12px 24px rgba(0, 0, 0, 0.18);
+        flex-direction: column;
+        align-items: stretch;
+        gap: 8px;
+    }
+
+    .site-nav.nav-open {
+        display: flex;
+    }
+
+    .site-nav a {
+        display: block;
+        padding: 13px 15px;
+        color: #ffffff;
+        font-size: 15px;
+        text-align: left;
+        text-decoration: none;
+        border-radius: 6px;
+    }
+
+    .site-nav a:hover,
+    .site-nav a:focus-visible {
+        background: rgba(255, 255, 255, 0.12);
+    }
+
+    .site-nav a[aria-current="page"] {
+        color: #f4cf57;
+        font-weight: 700;
+    }
+
+    .site-nav .nav-action {
+        background: #d9b132;
+        color: #123b92;
+        text-align: center;
+        font-weight: 700;
+        margin-top: 8px;
+    }
+
+}
+/* =========================================
+   MOBILE PRODUCT COMPARISON TABLE
+========================================= */
+
+@media (max-width: 800px) {
+
+    .comparison-table-wrapper {
+        width: 100%;
+        max-width: 100%;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .comparison-table-wrapper table {
+        min-width: 600px;
+        border-collapse: collapse;
+    }
+
+}
+/* =========================================
+   MOBILE PRODUCT COMPARISON FIX
+========================================= */
+
+@media screen and (max-width: 768px) {
+
+    .comparison-table-wrapper {
+        display: block;
+        width: 100%;
+        max-width: 100%;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .comparison-table-wrapper table {
+        width: 100%;
+        min-width: 600px;
+        border-collapse: collapse;
+    }
+
+}
+/* =========================================
+   MOBILE PRODUCT COMPARISON TABLE FIX
+========================================= */
+
+@media screen and (max-width: 768px) {
+
+    .products-comparison {
+        width: 100%;
+        min-width: 0;
+        max-width: 100%;
+        overflow: hidden;
+    }
+
+    .products-table-wrapper {
+        display: block;
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+        overflow-x: auto;
+        overflow-y: hidden;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .products-table-wrapper table {
+        width: 100%;
+        min-width: 600px;
+        border-collapse: collapse;
+    }
+
+    .products-table-wrapper th,
+    .products-table-wrapper td {
+        padding: 12px;
+        white-space: nowrap;
+        text-align: left;
+    }
+
+}
+/* ========================================
+   PRODUCT COMPARISON - MOBILE RESPONSIVE
+======================================== */
+
+.products-comparison {
+    width: 100%;
+    min-width: 0;
+    max-width: 100%;
+}
+
+.products-table-wrapper {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+}
+
+#comparisonTable {
+    width: 100%;
+    min-width: 600px;
+    border-collapse: collapse;
+}
+
+#comparisonTable th,
+#comparisonTable td {
+    padding: 14px 16px;
+    text-align: left;
+    white-space: nowrap;
+}
+
+@media (max-width: 800px) {
+
+    .products-container,
+    .products-comparison {
+        min-width: 0;
+        max-width: 100%;
+    }
+
+    .products-comparison {
+        overflow: hidden;
+    }
+
+    .products-table-wrapper {
+        overflow-x: auto;
+    }
+
+}
+/* ========================================
+   PRODUCT COMPARISON - MOBILE SWIPE HINT
+======================================== */
+
+.comparison-swipe-hint {
+    display: none;
+}
+
+@media (max-width: 800px) {
+
+    .comparison-swipe-hint {
+        display: block;
+        margin: 12px 0;
+        color: #b8860b;
+        font-size: 12px;
+        font-weight: 700;
+        text-align: center;
+        letter-spacing: 0.5px;
+    }
+
+}
+/* ========================================
+   INVESTMENT STATUS BADGES
+======================================== */
+
+.investment-status.cancelled {
+    background: #fde8e8;
+    color: #a52828;
+    border: 1px solid #f5b5b5;
+    padding: 8px 14px;
+    border-radius: 20px;
+    font-weight: 700;
+}
+
+.investment-status.completed {
+    background: #e5f5eb;
+    color: #237447;
+    border: 1px solid #b6dfc5;
+    padding: 8px 14px;
+    border-radius: 20px;
+    font-weight: 700;
+}
+/* =========================================
+   CANCELLED INVESTMENT MESSAGE
+========================================= */
+
+.investment-cancelled-message {
+    background: #fff5f5;
+    border-left: 4px solid #dc3545;
+    border-radius: 10px;
+    padding: 22px;
+    margin-top: 25px;
+}
+
+.investment-cancelled-message h3 {
+    color: #b42318;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.investment-cancelled-message p {
+    color: #6b4b4b;
+    line-height: 1.7;
+    margin: 0;
+}

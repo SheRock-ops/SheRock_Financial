@@ -80,7 +80,7 @@ sort($categories);
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css?v=2">
+    <link rel="stylesheet" href="css/style.css?v=3">
 </head>
 <body>
 
@@ -309,8 +309,11 @@ sort($categories);
                             terms, and minimum deposits.
                         </p>
 
-                        <div class="products-table-wrapper">
+                        <p class="comparison-swipe-hint">
+                         ← Swipe to view more →
+                        </p>
 
+                        <div class="products-table-wrapper">
                             <table id="comparisonTable">
 
                                 <thead>
