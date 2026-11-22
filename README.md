@@ -1,158 +1,83 @@
-# SheRock_Financial
-My Capstone Project
-
-SheRock Financial – Save Smarter. Grow Stronger.
-A Capstone Project by Sheila Mae Dalisay‑Duremdes
-
-📌 Overview
-SheRock Financial is a web application designed to make saving and investing easier to understand, compare, and manage. Many individuals want to grow their money but often find financial products, interest rates, investment terms, and maturity options confusing.
-
-This project combines real-world financial industry experience with the web development skills learned throughout the program to create a platform that is simple, organized, and user-friendly.
-
-SheRock Financial empowers users to explore financial products, compare term deposit/GIC options, calculate potential returns, and track their savings goals — all in one clean, responsive interface.
-
-🎯 Project Purpose
-The goal of SheRock Financial is to:
-
-Present financial information in a clear and accessible way
-
-Help users make informed financial decisions
-
-Provide tools that simplify saving and investing
-
-Build a practical application that merges financial knowledge with modern web development
-
-🛠️ Core Features
-1. User Registration & Login
-Secure account creation and authentication so users can access their personalized financial dashboard.
-
-2. Financial Dashboard
-A clean overview of:
-
-Savings goals
-
-Current investments
-
-Key financial information
-
-Designed for clarity and quick decision-making.
-
-3. Term Deposit / GIC Products
-Displays available products with:
-
-Interest rates
-
-Term lengths
-
-Minimum deposit requirements
-
-Maturity details
-
-Helps users understand their investment options at a glance.
-
-4. Product Comparison Tool
-Allows users to compare multiple GIC/term deposit products side-by-side to evaluate differences in:
-
-Rates
-
-Terms
-
-Requirements
-
-Maturity outcomes
-
-5. Investment Calculator
-Users can input:
-
-Investment amount
-
-Interest rate
-
-Term length
-
-The calculator estimates potential returns, helping users plan smarter.
-
-6. Savings Goal Tracker
-Users can:
-
-Create savings goals
-
-Set target amounts
-
-Track progress visually
-
-Encourages financial discipline and motivation.
-
-7. Investment Management
-Full CRUD functionality:
-
-Add new investments
-
-View details
-
-Update records
-
-Remove investments
-
-8. Maturity Tracker
-Displays upcoming maturity dates so users can prepare for reinvestment or withdrawal.
-
-9. Financial Education Section
-Simple explanations of key financial terms:
-
-Principal
-
-Interest rate
-
-Maturity date
-
-GIC
-
-Term deposit
-
-Designed to help beginners understand financial concepts.
-
-10. Responsive Design
-Optimized for:
-
-Desktop
-
-Tablet
-
-Mobile
-
-Ensures a smooth experience across all devices.
-
-🧩 Tech Stack (Planned)
-Frontend: HTML, CSS, JavaScript
-
-Backend: (Your chosen backend — Node.js, PHP, or Firebase)
-
-Database: (MySQL, MongoDB, or Firebase Firestore)
-
-Tools: GitHub, VS Code, API integrations (if applicable)
-
-📈 Learning Outcomes
-Through SheRock Financial, the project demonstrates:
-
-Practical application of web development skills
-
-Real-world financial knowledge integration
-
-UI/UX design principles
-
-CRUD operations
-
-Data handling and user authentication
-
-Responsive layout creation
-
-Problem-solving and project planning
-
-🚀 Project Vision
-SheRock Financial aims to become a beginner-friendly financial planning tool that empowers users — especially women — to save smarter, grow stronger, and make confident financial decisions.
-
-📬 Author
-Sheila Mae Dalisay‑Duremdes  
-Capstone Project – Web Development Program
-Toronto, Canada
+# SheRock Financial
+### Save Smarter. Grow Stronger.
+
+**A Web Development Capstone Project by Sheila Mae Dalisay-Duremdes**
+
+## 📌 Overview
+
+SheRock Financial is a responsive financial planning web application designed to help users better understand, organize, and manage their savings and investments.
+
+Many individuals find financial products, interest rates, investment terms, and maturity options confusing. SheRock Financial addresses this challenge by combining accessible financial information with practical, interactive planning tools.
+
+The project brings together my financial industry knowledge and the web development skills I gained throughout my program.
+
+## 🎯 Project Purpose
+
+SheRock Financial aims to:
+
+- Make financial information easier to understand.
+- Help users explore savings and investment products.
+- Provide tools for estimating investment returns.
+- Allow users to manage investments and savings goals.
+- Encourage financial literacy and responsible financial planning.
+- Demonstrate practical full-stack web development skills.
+
+## 🛠️ Core Features
+
+### 1. User Registration and Login
+- User account registration and authentication.
+- Password hashing and verification.
+- PHP session-based access to personalized features.
+
+### 2. Personalized Financial Dashboard
+- Overview of financial information.
+- Savings goal summaries and progress.
+- Investment information presented in a user-friendly layout.
+
+### 3. Financial Products
+- Explore term deposit and GIC products.
+- Review interest rates, terms, and product requirements.
+- Support comparison and understanding of investment options.
+
+### 4. Investment Calculator
+- Enter investment amount, interest rate, and term.
+- Calculate estimated investment returns.
+- Support informed financial planning.
+
+### 5. Savings Goal Tracker
+- Create, view, edit, and delete savings goals.
+- Set target amounts and target dates.
+- Record contributions.
+- Monitor savings progress visually.
+
+### 6. Investment Management
+- Add new investments.
+- View existing investment records.
+- Update investment information and status.
+- Delete investment records.
+- Organize investments in a personalized account.
+
+### 7. Financial Education Hub
+- Interactive financial literacy lessons.
+- Topics covering budgeting, saving, emergency funds, interest, investing, and financial security.
+- Expandable lesson cards.
+- Six-question interactive quiz.
+- Immediate answer feedback, score tracking, and quiz restart functionality.
+
+### 8. Responsive Design
+- Royal blue and gold visual identity.
+- Responsive layouts for desktop, tablet, and mobile.
+- Cross-device interface testing using browser developer tools.
+
+## 🧩 Technology Stack
+
+| Category | Technologies |
+|---|---|
+| Frontend | HTML5, CSS3, JavaScript |
+| Backend | PHP |
+| Database | MySQL |
+| Database Access | MySQLi |
+| Local Development | XAMPP (Apache and MySQL) |
+| Code Editor | Visual Studio Code |
+| Version Control | Git and GitHub |
+| Project Management
